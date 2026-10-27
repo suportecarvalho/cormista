@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadeira suspensa Aerona — Cor Mista 3D</title>
+  <meta name="description" content="Cadeira suspensa Aerona - Mobiliário exclusivo Cor Mista 3D Conforto e design atemporal com estrutura reforçada e almofada premium." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=14" />
+</head>
+<body class="product-page">
+
+  <!-- ===== CABEÇALHO ===== -->
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header" id="header">
+    <div class="header__logo">
+      <a href="index.html" aria-label="CorMista 3D Início">
+        <img src="logo_cormista3d.png?v=8" alt="CorMista 3D" class="header__logo-img" />
+      </a>
+    </div>
+
+    <!-- Menu Desktop -->
+    <nav class="header__nav" aria-label="Navegação principal">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">Início</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="index.html#products" class="nav-link nav-link--active">Loja</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#products" class="dropdown-link" data-filter="all">Todos os Produtos</a></li>
+          <li><a href="index.html#products" class="dropdown-link" data-filter="furniture">Móveis</a></li>
+          <li><a href="index.html#products" class="dropdown-link" data-filter="bed">Cama &amp; Banho</a></li>
+          <li><a href="index.html#products" class="dropdown-link" data-filter="lighting">Iluminação</a></li>
+          <li><a href="index.html#products" class="dropdown-link" data-filter="tableware">Mesa &amp; Utensílios</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="index.html#categories" class="nav-link">Páginas</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#categories" class="dropdown-link">Categorias</a></li>
+          <li><a href="index.html#info-bar" class="dropdown-link">Envios &amp; Devoluções</a></li>
+          <li><a href="index.html#hero" class="dropdown-link">Lançamentos</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="index.html#products" class="nav-link">Blog</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-link">Tendências de Design 2026</a></li>
+          <li><a href="#" class="dropdown-link">Estilo de Vida Minimalista</a></li>
+          <li><a href="#" class="dropdown-link">Vitrine de Verão</a></li>
+        </ul>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#info-bar" class="nav-link">Contato</a>
+      </div>
+    </nav>
+
+    <div class="header__icons">
+      <!-- Busca -->
+      <button class="icon-btn" id="btn-search" aria-label="Buscar produtos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <!-- Conta -->
+      <button class="icon-btn" id="btn-account" aria-label="Minha conta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <!-- Lista de Desejos -->
+      <button class="icon-btn" id="btn-wishlist" aria-label="Lista de desejos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <!-- Carrinho de Compras -->
+      <button class="icon-btn icon-btn--cart" id="btn-cart" aria-label="Carrinho de compras">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <!-- Menu Hambúrguer Mobile -->
+      <button class="icon-btn mobile-menu-btn" id="btn-menu" aria-label="Abrir menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Modal de Busca -->
+  <div class="search-modal" id="search-modal" aria-hidden="true">
+    <div class="search-modal__inner">
+      <div class="search-modal__bar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search-input" class="search-modal__input" placeholder="Buscar produtos..." autocomplete="off" />
+        <button class="search-modal__close" id="btn-close-search" aria-label="Fechar busca">&times;</button>
+      </div>
+      <div class="search-modal__results" id="search-results"></div>
+    </div>
+  </div>
+  <div class="search-modal-overlay" id="search-modal-overlay"></div>
+
+  <!-- Painel Lateral do Carrinho -->
+  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">Carrinho de Compras (<span id="cart-drawer-count">0</span>)</h3>
+      <button class="cart-drawer__close" id="btn-close-cart" aria-label="Fechar carrinho">&times;</button>
+    </div>
+    <div class="cart-drawer__body" id="cart-drawer-body">
+      <div class="cart-drawer__empty" id="cart-drawer-empty">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p>Seu carrinho está vazio.</p>
+      </div>
+      <div class="cart-drawer__items" id="cart-drawer-items"></div>
+    </div>
+    <div class="cart-drawer__footer" id="cart-drawer-footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal:</span>
+        <strong id="cart-drawer-subtotal">R$ 0,00</strong>
+      </div>
+      <button class="cart-drawer__checkout-btn">FINALIZAR COMPRA</button>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+
+  <!-- Gaveta de Navegação Mobile -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav>
+      <a href="index.html" class="mobile-nav__link">Início</a>
+      <a href="index.html#products" class="mobile-nav__link">Loja</a>
+      <a href="index.html#categories" class="mobile-nav__link">Páginas</a>
+      <a href="index.html#products" class="mobile-nav__link">Blog</a>
+      <a href="index.html#info-bar" class="mobile-nav__link">Contato</a>
+    </nav>
+  </div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="product-page-main">
+
+    <!-- Barra de Breadcrumbs & Navegação entre Produtos -->
+    <div class="product-breadcrumb-bar">
+      <div class="product-breadcrumb-bar__inner">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <a href="index.html">Início</a>
+          <span class="breadcrumb__sep">/</span>
+          <a href="index.html#products">Móveis</a>
+          <span class="breadcrumb__sep">/</span>
+          <span class="breadcrumb__current">Cadeira suspensa Aerona</span>
+        </nav>
+
+        <div class="product-nav-switch">
+          <a href="index.html#products" class="product-nav-switch__link" title="Próximo produto: Mesa deslizante Phoenix">
+            <span>Próximo Produto</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO PRINCIPAL DO PRODUTO: GALERIA + RESUMO -->
+    <section class="product-detail-section">
+      <div class="product-detail-container">
+
+        <!-- Coluna da Galeria -->
+        <div class="product-gallery">
+          <div class="product-gallery__main" id="product-gallery-main">
+            <button class="product-gallery__zoom-btn" id="btn-zoom" aria-label="Clique para ampliar a imagem" title="Clique para ampliar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/>
+                <line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+              <span>Ampliar</span>
+            </button>
+
+            <img
+              id="main-product-img"
+              src="aerona_gallery_1.jpg"
+              alt="Cadeira suspensa Aerona - Vista Principal"
+              class="product-gallery__img"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Miniaturas de Fotos -->
+          <div class="product-gallery__thumbs">
+            <button class="gallery-thumb gallery-thumb--active" data-src="aerona_gallery_1.jpg" aria-label="Ver imagem 1">
+              <img src="aerona_gallery_1.jpg" alt="Miniatura 1 - Cadeira suspensa Aerona" />
+            </button>
+            <button class="gallery-thumb" data-src="aerona_gallery_2.jpg" aria-label="Ver imagem 2">
+              <img src="aerona_gallery_2.jpg" alt="Miniatura 2 - Cadeira suspensa Aerona em ângulo" />
+            </button>
+            <button class="gallery-thumb" data-src="product_1_aerona.png" aria-label="Ver imagem recortada transparente">
+              <img src="product_1_aerona.png" alt="Miniatura 3 - Recorte transparente Aerona" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Coluna de Informações e Compra -->
+        <div class="product-summary">
+          <!-- Avaliação por Estrelas -->
+          <div class="product-summary__rating">
+            <div class="star-rating-box" role="img" aria-label="Classificação 4 de 5 estrelas">
+              <span class="star-icon star-icon--filled">&#9733;</span>
+              <span class="star-icon star-icon--filled">&#9733;</span>
+              <span class="star-icon star-icon--filled">&#9733;</span>
+              <span class="star-icon star-icon--filled">&#9733;</span>
+              <span class="star-icon star-icon--empty">&#9733;</span>
+            </div>
+            <a href="#reviews-tab-btn" class="product-summary__review-link" id="link-to-reviews">(1 avaliação de cliente)</a>
+          </div>
+
+          <h1 class="product-summary__title">Cadeira suspensa Aerona</h1>
+          <div class="product-summary__sku-row">
+            <span class="sku-label">SKU:</span>
+            <span class="sku-value">AB123756789-1</span>
+          </div>
+
+          <div class="product-summary__price-box">
+            <span class="product-summary__price">R$ 499,90</span>
+            <span class="product-summary__price-orig">R$ 589,00</span>
+            <span class="product-summary__usd">($499.90 USD)</span>
+          </div>
+
+          <div class="product-summary__desc">
+            <p>Conforto ergonômico absoluto e design contemporâneo de inspiração escandinava. Tecida artesanalmente com materiais de alta durabilidade, a Cadeira suspensa Aerona é o toque perfeito de sofisticação para salas de estar, varandas cobertas ou quartos modernos.</p>
+          </div>
+
+          <!-- Formulário de Compra & Quantidade -->
+          <form class="product-buy-form" id="product-buy-form" onsubmit="return false;">
+            <div class="product-buy-form__row">
+              <div class="qty-control" aria-label="Seletor de quantidade">
+                <button type="button" class="qty-btn" id="qty-minus" aria-label="Diminuir quantidade">&minus;</button>
+                <input type="number" id="prod-quantity" name="quantity" class="qty-input" value="1" min="1" max="99" aria-label="Quantidade" />
+                <button type="button" class="qty-btn" id="qty-plus" aria-label="Aumentar quantidade">&plus;</button>
+              </div>
+
+              <button type="button" class="btn-single-add-cart" id="btn-single-add">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                ADICIONAR AO CARRINHO
+              </button>
+            </div>
+
+            <button type="button" class="btn-single-buy-now" id="btn-single-buy-now">
+              COMPRAR AGORA
+            </button>
+          </form>
+
+          <!-- Ações Secundárias: Lista de Desejos & Comparar -->
+          <div class="product-summary__actions">
+            <button type="button" class="action-btn" id="btn-wishlist-single">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span id="wishlist-text">Adicionar à lista de desejos</span>
+            </button>
+
+            <button type="button" class="action-btn" id="btn-compare-single">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+              <span>Comparar</span>
+            </button>
+          </div>
+
+          <!-- Metadados do Produto -->
+          <div class="product-summary__meta">
+            <p><strong>Categorias:</strong> <a href="index.html#products">Cama &amp; Banho</a>, <a href="index.html#products">Móveis</a>, <a href="index.html#products">Mesa &amp; Utensílios</a></p>
+            <p><strong>Tags:</strong> <a href="index.html#products">cadeira</a>, <a href="index.html#products">móveis</a>, <a href="index.html#products">iluminação</a>, <a href="index.html#products">design</a></p>
+          </div>
+
+          <!-- Compartilhamento Social -->
+          <div class="product-summary__share">
+            <span class="share-label">Compartilhar:</span>
+            <div class="share-icons">
+              <a href="#" class="share-icon" aria-label="Compartilhar no Facebook" title="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="share-icon" aria-label="Compartilhar no Twitter/X" title="Twitter / X">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <a href="#" class="share-icon" aria-label="Compartilhar no Pinterest" title="Pinterest">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.98-.12-2.49.03-3.56l1.05-4.48s-.26-.53-.26-1.32c0-1.24.72-2.16 1.62-2.16.76 0 1.13.57 1.13 1.26 0 .77-.49 1.92-.74 2.98-.21.9.45 1.63 1.34 1.63 1.6 0 2.84-1.69 2.84-4.13 0-2.16-1.55-3.67-3.77-3.67-2.57 0-4.08 1.93-4.08 3.92 0 .78.3 1.61.67 2.06a.34.34 0 0 1 .08.33l-.25 1.05c-.04.17-.14.21-.32.13-1.2-.56-1.95-2.31-1.95-3.72 0-3.03 2.2-5.81 6.35-5.81 3.33 0 5.92 2.37 5.92 5.55 0 3.31-2.09 5.98-4.99 5.98-.97 0-1.89-.51-2.2-.11l-.6 2.29c-.22.84-.81 1.9-1.21 2.54A12 12 0 1 0 12 0z"/></svg>
+              </a>
+              <a href="#" class="share-icon" aria-label="Compartilhar no WhatsApp" title="WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.275-.1-.475-.15-.675.15-.2.301-.775.979-.95 1.18-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.413-1.488-.893-.796-1.496-1.78-1.672-2.08-.175-.301-.019-.464.131-.614.136-.135.301-.35.451-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.628-.925-2.228-.244-.585-.493-.506-.675-.515-.175-.01-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.502 0 1.476 1.075 2.902 1.225 3.102.15.2 2.115 3.23 5.124 4.53 3.01 1.3 3.01.867 3.56.817.55-.05 1.78-.726 2.03-1.428.25-.701.25-1.302.175-1.428-.075-.125-.275-.225-.575-.375z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE ABAS: DESCRIÇÃO & AVALIAÇÕES -->
+    <section class="product-tabs-section">
+      <div class="product-tabs-container">
+        <!-- Navegação das Abas -->
+        <div class="product-tabs__nav" role="tablist">
+          <button class="tab-nav-btn tab-nav-btn--active" id="desc-tab-btn" role="tab" aria-selected="true" aria-controls="tab-pane-desc">
+            Descrição
+          </button>
+          <button class="tab-nav-btn" id="reviews-tab-btn" role="tab" aria-selected="false" aria-controls="tab-pane-reviews">
+            Avaliações (<span id="review-count-badge">1</span>)
+          </button>
+        </div>
+
+        <!-- Painel 1: Descrição -->
+        <div class="tab-pane tab-pane--active" id="tab-pane-desc" role="tabpanel" aria-labelledby="desc-tab-btn">
+          <div class="tab-desc-grid">
+            <div class="tab-desc-text">
+              <h2 class="tab-desc-heading">Introdução</h2>
+              <p class="tab-desc-paragraph">
+                Com acabamento primoroso e silhueta escultural, a Cadeira suspensa Aerona é projetada para proporcionar momentos únicos de relaxamento e contemplação. Criada com algodão reforçado de alta gramatura e tecelagem resistente a intempéries moderadas, a peça combina solidez construtiva com uma estética leve e acolhedora.
+              </p>
+              <p class="tab-desc-paragraph">
+                O encosto curvo abraça o corpo suavemente, aliviando pontos de pressão lombar e cervical. Acompanha almofada estofada com espuma de densidade balanceada e capa removível com zíper oculto para facilitar a higienização.
+              </p>
+
+              <h2 class="tab-desc-heading">Características &amp; Especificações</h2>
+              <ul class="tab-desc-list">
+                <li><strong>Estrutura:</strong> Aço tubular reforçado com pintura eletrostática fosca anticorrosiva.</li>
+                <li><strong>Assento:</strong> Trama de algodão macio trançado à mão com reforço de cordame náutico.</li>
+                <li><strong>Capacidade de Carga:</strong> Suporta com segurança até 160 kg.</li>
+                <li><strong>Fixação Inclusa:</strong> Acompanha corrente de 1,5 metro em aço galvanizado e mosquetão de alta resistência.</li>
+                <li><strong>Dimensões:</strong> 95 cm de largura &times; 130 cm de altura &times; 75 cm de profundidade.</li>
+                <li><strong>Uso Recomendado:</strong> Ambientes internos (salas, quartos) e externos cobertos (varandas e pergolados).</li>
+              </ul>
+            </div>
+
+            <div class="tab-desc-media">
+              <img src="aerona_gallery_2.jpg" alt="Detalhes e acabamento da Cadeira suspensa Aerona" class="tab-desc-img" loading="lazy" />
+              <p class="tab-desc-caption">Acabamento artesanal com trama reforçada e almofada de alta densidade.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Painel 2: Avaliações -->
+        <div class="tab-pane" id="tab-pane-reviews" role="tabpanel" aria-labelledby="reviews-tab-btn">
+          <div class="tab-reviews-grid">
+            <!-- Lista de Comentários Existentes -->
+            <div class="tab-reviews-list-col">
+              <h2 class="reviews-section-title"><span id="reviews-count-display">1</span> avaliação para Cadeira suspensa Aerona</h2>
+
+              <div class="reviews-list" id="reviews-list">
+                <!-- Avaliação 1 (Original Supro) -->
+                <div class="review-item">
+                  <div class="review-item__avatar">
+                    <span>DF</span>
+                  </div>
+                  <div class="review-item__content">
+                    <div class="review-item__header">
+                      <div class="star-rating-box star-rating-box--sm" role="img" aria-label="Nota 4 de 5">
+                        <span class="star-icon star-icon--filled">&#9733;</span>
+                        <span class="star-icon star-icon--filled">&#9733;</span>
+                        <span class="star-icon star-icon--filled">&#9733;</span>
+                        <span class="star-icon star-icon--filled">&#9733;</span>
+                        <span class="star-icon star-icon--empty">&#9733;</span>
+                      </div>
+                      <strong class="review-item__author">drfurion</strong>
+                      <span class="review-item__dash">&ndash;</span>
+                      <time class="review-item__date" datetime="2018-06-21">21 de junho de 2018</time>
+                    </div>
+                    <p class="review-item__text">Produto de altíssima qualidade! O acabamento é impecável e a cadeira é extremamente confortável para leitura e descanso na varanda.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulário para Nova Avaliação -->
+            <div class="tab-reviews-form-col">
+              <div class="review-form-card">
+                <h3 class="review-form-title">Adicionar uma avaliação</h3>
+                <p class="review-form-sub">O seu endereço de e-mail não será publicado. Campos obrigatórios são marcados com *</p>
+
+                <form id="new-review-form" class="review-form">
+                  <div class="form-group">
+                    <label class="form-label">Sua nota *</label>
+                    <div class="interactive-stars" id="star-picker">
+                      <button type="button" class="star-pick-btn" data-rating="1" aria-label="1 estrela">&#9733;</button>
+                      <button type="button" class="star-pick-btn" data-rating="2" aria-label="2 estrelas">&#9733;</button>
+                      <button type="button" class="star-pick-btn" data-rating="3" aria-label="3 estrelas">&#9733;</button>
+                      <button type="button" class="star-pick-btn" data-rating="4" aria-label="4 estrelas">&#9733;</button>
+                      <button type="button" class="star-pick-btn" data-rating="5" aria-label="5 estrelas">&#9733;</button>
+                    </div>
+                    <input type="hidden" id="selected-rating" value="5" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="review-comment" class="form-label">Sua avaliação *</label>
+                    <textarea id="review-comment" rows="5" class="form-input form-textarea" placeholder="Conte como foi sua experiência com o produto..." required></textarea>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="review-author" class="form-label">Nome *</label>
+                      <input type="text" id="review-author" class="form-input" placeholder="Seu nome" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="review-email" class="form-label">E-mail *</label>
+                      <input type="email" id="review-email" class="form-input" placeholder="seuemail@exemplo.com" required />
+                    </div>
+                  </div>
+
+                  <div class="form-checkbox-group">
+                    <input type="checkbox" id="review-save-info" checked />
+                    <label for="review-save-info">Salvar meu nome e e-mail neste navegador para as próximas avaliações.</label>
+                  </div>
+
+                  <button type="submit" class="btn-submit-review">ENVIAR AVALIAÇÃO</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE PRODUTOS RELACIONADOS (RELATED PRODUCTS) -->
+    <section class="related-products-section">
+      <div class="related-products-container">
+        <h2 class="related-section-title">Produtos Relacionados</h2>
+
+        <div class="related-products-grid">
+          <!-- Produto Relacionado 1: Estante Livros -->
+          <article class="product-card visible" id="rel-1">
+            <span class="product-card__badge product-card__badge--sale">Oferta</span>
+            <div class="product-card__img-wrap">
+              <img src="related_shelf.jpg" alt="Estante Modular de Livros" class="product-card__img" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__name">Estante Modular de Livros</p>
+              <div class="product-card__stars">
+                <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span>
+              </div>
+              <p class="product-card__price">
+                <span class="price-discount">R$ 149,90</span>
+                <span class="price-old">R$ 179,90</span>
+              </p>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__add" onclick="addToCart('Estante Modular de Livros', 149.90, 'related_shelf.jpg')">ADICIONAR AO CARRINHO</button>
+              <div class="product-card__action-icons">
+                <button class="product-card__icon-btn" aria-label="Lista de desejos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produto Relacionado 2: Cadeira Korea Fabric -->
+          <article class="product-card visible" id="rel-2">
+            <div class="product-card__img-wrap">
+              <img src="related_chair.jpg" alt="Cadeira em Tecido Korea" class="product-card__img" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__name">Cadeira em Tecido Korea</p>
+              <div class="product-card__stars">
+                <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span>
+              </div>
+              <p class="product-card__price">R$ 269,90</p>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__add" onclick="addToCart('Cadeira em Tecido Korea', 269.90, 'related_chair.jpg')">ADICIONAR AO CARRINHO</button>
+              <div class="product-card__action-icons">
+                <button class="product-card__icon-btn" aria-label="Lista de desejos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produto Relacionado 3: Almofariz e Pilão -->
+          <article class="product-card visible" id="rel-3">
+            <div class="product-card__img-wrap">
+              <img src="related_mortar.jpg" alt="Almofariz &amp; Pilão em Granito" class="product-card__img" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__name">Almofariz &amp; Pilão em Granito</p>
+              <div class="product-card__stars">
+                <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span>
+              </div>
+              <p class="product-card__price">R$ 200,00</p>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__add" onclick="addToCart('Almofariz & Pilão em Granito', 200.00, 'related_mortar.jpg')">ADICIONAR AO CARRINHO</button>
+              <div class="product-card__action-icons">
+                <button class="product-card__icon-btn" aria-label="Lista de desejos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produto Relacionado 4: Cadeira Silas -->
+          <article class="product-card visible" id="rel-4">
+            <span class="product-card__badge product-card__badge--sale">Oferta</span>
+            <div class="product-card__img-wrap">
+              <img src="product_3_silas.png" alt="Cadeira de jantar Silas" class="product-card__img" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__name">Cadeira de jantar Silas</p>
+              <div class="product-card__stars">
+                <span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span>
+              </div>
+              <p class="product-card__price">
+                <span class="price-discount">R$ 29,90</span>
+                <span class="price-old">R$ 39,90</span>
+              </p>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__add" onclick="addToCart('Cadeira de jantar Silas', 29.90, 'product_3_silas.png')">ADICIONAR AO CARRINHO</button>
+              <div class="product-card__action-icons">
+                <button class="product-card__icon-btn" aria-label="Lista de desejos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE ZOOM DE IMAGEM (LIGHTBOX) -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-modal__backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-modal__content">
+      <button class="lightbox-modal__close" id="lightbox-close" aria-label="Fechar ampliação">&times;</button>
+      <img src="aerona_gallery_1.jpg" alt="Ampliação Cadeira Aerona" id="lightbox-img" class="lightbox-modal__img" />
+    </div>
+  </div>
+
+  <!-- NOTIFICAÇÃO TOAST -->
+  <div class="toast-notify" id="toast-notify" aria-live="polite"></div>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+
+        <!-- Coluna 1: Marca & Social -->
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html">CorMista 3D</a>
+          </div>
+          <p class="footer__text">
+            Móveis e objetos de decoração para transformar qualquer espaço com sofisticação, conforto e estética atemporal.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polygon points="5 12 12 5 19 12"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Ajuda & Suporte -->
+        <div class="footer__col">
+          <h4 class="footer__title">Ajuda &amp; Informações</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Rastrear Pedido</a></li>
+            <li><a href="#" class="footer__link">Trocas e Devoluções</a></li>
+            <li><a href="#" class="footer__link">Política de Entrega</a></li>
+            <li><a href="#" class="footer__link">Termos de Serviço</a></li>
+            <li><a href="#" class="footer__link">Perguntas Frequentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Departamentos -->
+        <div class="footer__col">
+          <h4 class="footer__title">Departamentos</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#cat-decoracao" class="footer__link">Decoração</a></li>
+            <li><a href="index.html#cat-brinquedos" class="footer__link">Brinquedos &amp; Miniaturas</a></li>
+            <li><a href="index.html#cat-organizacao" class="footer__link">Organização &amp; Acessórios</a></li>
+            <li><a href="index.html#cat-personalizados" class="footer__link">Personalizados</a></li>
+            <li><a href="index.html#products" class="footer__link">Novidades da Semana</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Newsletter -->
+        <div class="footer__col">
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__text">Cadastre-se para novidades exclusivas e <strong>10% OFF</strong> no seu primeiro pedido.</p>
+          <form class="footer__form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado por se inscrever na Cor Mista 3D!');">
+            <div class="footer__input-wrap">
+              <input type="email" class="footer__input" placeholder="Seu melhor e-mail..." required />
+              <button type="submit" class="footer__submit-btn" aria-label="Inscrever-se">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </form>
+          <span class="footer__secure-note">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Compra 100% segura e protegida
+          </span>
+        </div>
+      </div>
+
+      <!-- Barra Inferior -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Cor Mista 3D Todos os direitos reservados. Feito com excelência.</p>
+        <div class="footer__payments">
+          <span class="payment-badge">PIX</span>
+          <span class="payment-badge">VISA</span>
+          <span class="payment-badge">MASTERCARD</span>
+          <span class="payment-badge">BOLETO</span>
+          <span class="payment-badge">ELO</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Voltar ao Topo -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="app.js?v=12"></script>
+  <script src="product.js?v=12"></script>
+</body>
+</html>

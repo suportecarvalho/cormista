@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="notranslate" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="pt-BR" />
+  <meta name="google" content="notranslate" />
+  <meta name="googlebot" content="notranslate" />
+  <meta name="robots" content="notranslate" />
+  <title>Cor Mista 3D — Decoração &amp; Móveis de Alto Padrão</title>
+  <meta name="description" content="Cor Mista 3D — Descubra coleções exclusivas de móveis, decoração, cozinha e cama &amp; banho. Novos lançamentos toda semana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=14" />
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header" id="header">
+    <div class="header__logo">
+      <a href="index.html" aria-label="CorMista 3D Início">
+        <img src="logo_cormista3d.png?v=8" alt="CorMista 3D" class="header__logo-img" />
+      </a>
+    </div>
+
+    <!-- Menu Desktop -->
+    <nav class="header__nav" aria-label="Navegação principal">
+      <div class="nav-item">
+        <a href="#hero" class="nav-link nav-link--active">Início</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#products" class="nav-link">Loja</a>
+        <ul class="dropdown-menu">
+          <li><a href="#products" class="dropdown-link" data-filter="all">Todos os Produtos</a></li>
+          <li><a href="#products" class="dropdown-link" data-filter="furniture">Móveis</a></li>
+          <li><a href="#products" class="dropdown-link" data-filter="bed">Cama &amp; Banho</a></li>
+          <li><a href="#products" class="dropdown-link" data-filter="lighting">Iluminação</a></li>
+          <li><a href="#products" class="dropdown-link" data-filter="tableware">Mesa &amp; Utensílios</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#categories" class="nav-link">Páginas</a>
+        <ul class="dropdown-menu">
+          <li><a href="#categories" class="dropdown-link">Categorias</a></li>
+          <li><a href="#info-bar" class="dropdown-link">Envios &amp; Devoluções</a></li>
+          <li><a href="#hero" class="dropdown-link">Lançamentos</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#products" class="nav-link">Blog</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-link">Tendências de Design 2026</a></li>
+          <li><a href="#" class="dropdown-link">Estilo de Vida Minimalista</a></li>
+          <li><a href="#" class="dropdown-link">Vitrine de Verão</a></li>
+        </ul>
+      </div>
+      <div class="nav-item">
+        <a href="#info-bar" class="nav-link">Contato</a>
+      </div>
+    </nav>
+
+    <div class="header__icons">
+      <!-- Busca -->
+      <button class="icon-btn" id="btn-search" aria-label="Buscar produtos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <!-- Conta -->
+      <button class="icon-btn" id="btn-account" aria-label="Minha conta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <!-- Lista de Desejos -->
+      <button class="icon-btn" id="btn-wishlist" aria-label="Lista de desejos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <!-- Carrinho de Compras -->
+      <button class="icon-btn icon-btn--cart" id="btn-cart" aria-label="Carrinho de compras">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <!-- Menu Hambúrguer Mobile -->
+      <button class="icon-btn mobile-menu-btn" id="btn-menu" aria-label="Abrir menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- Modal de Busca -->
+  <div class="search-modal" id="search-modal" aria-hidden="true">
+    <div class="search-modal__inner">
+      <div class="search-modal__bar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search-input" class="search-modal__input" placeholder="Buscar produtos..." autocomplete="off" />
+        <button class="search-modal__close" id="btn-close-search" aria-label="Fechar busca">&times;</button>
+      </div>
+      <div class="search-modal__results" id="search-results"></div>
+    </div>
+  </div>
+  <div class="search-modal-overlay" id="search-modal-overlay"></div>
+
+  <!-- Painel Lateral do Carrinho -->
+  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">Carrinho de Compras (<span id="cart-drawer-count">0</span>)</h3>
+      <button class="cart-drawer__close" id="btn-close-cart" aria-label="Fechar carrinho">&times;</button>
+    </div>
+    <div class="cart-drawer__body" id="cart-drawer-body">
+      <div class="cart-drawer__empty" id="cart-drawer-empty">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p>Seu carrinho está vazio.</p>
+      </div>
+      <div class="cart-drawer__items" id="cart-drawer-items"></div>
+    </div>
+    <div class="cart-drawer__footer" id="cart-drawer-footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal:</span>
+        <strong id="cart-drawer-subtotal">R$ 0,00</strong>
+      </div>
+      <button class="cart-drawer__checkout-btn">FINALIZAR COMPRA</button>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+
+  <!-- Gaveta de Navegação Mobile -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav>
+      <a href="#hero" class="mobile-nav__link">Início</a>
+      <a href="#products" class="mobile-nav__link">Loja</a>
+      <a href="#" class="mobile-nav__link">Páginas</a>
+      <a href="#" class="mobile-nav__link">Blog</a>
+      <a href="#" class="mobile-nav__link">Contato</a>
+    </nav>
+  </div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+  <main>
+    <!-- ===== DESTAQUE PRINCIPAL ===== -->
+    <section class="hero" id="hero" aria-label="Destaque principal">
+      <div class="hero__circle"></div>
+
+      <div class="hero__content">
+        <span class="hero__label">NOVIDADE DE NATAL</span>
+        <h1 class="hero__title">Enfeites de<br>Natal</h1>
+        <p class="hero__desc">Sua casa mais alegre neste Natal com nossa coleção exclusiva de enfeites 3D. Peças únicas que trazem encanto, cor e afeto para celebrar a época mais mágica do ano.</p>
+        <button class="hero__btn" id="btn-hero-buy">COMPRAR AGORA</button>
+      </div>
+
+      <div class="hero__image-wrap">
+        <img
+          src="hero_natal_seamless.png"
+          alt="Enfeites de Natal - Papai Noel e Árvore Decorativa"
+          class="hero__img"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIAS ===== -->
+    <!-- BARRA DE BENEFÍCIOS (INFO BAR) -->
+    <div class="info-bar" id="info-bar">
+      <div class="info-bar__inner">
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg class="info-item__svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </span>
+          <div class="info-item__content">
+            <strong class="info-item__title">FRETE GRÁTIS</strong>
+            <span class="info-item__sub">Pedidos acima de R$ 200</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg class="info-item__svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6.5 17.5A8.5 8.5 0 1 1 20.5 12"/>
+              <polyline points="16.5 11 20.5 15 24.5 11"/>
+            </svg>
+          </span>
+          <div class="info-item__content">
+            <strong class="info-item__title">DEVOLUÇÃO GRATUITA</strong>
+            <span class="info-item__sub">Dentro de 30 dias</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg class="info-item__svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="11" width="16" height="11" rx="1.5" ry="1.5"/>
+              <path d="M7.5 11V7a4.5 4.5 0 0 1 9 0v4"/>
+            </svg>
+          </span>
+          <div class="info-item__content">
+            <strong class="info-item__title">100% SEGURO</strong>
+            <span class="info-item__sub">Compras online</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg class="info-item__svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.41 13.41l7.17 7.17a2 2 0 0 0 2.83 0L22 12V2h-10L3.41 10.59a2 2 0 0 0 0 2.82z"/>
+              <circle cx="16.5" cy="7.5" r="1.2" fill="currentColor"/>
+            </svg>
+          </span>
+          <div class="info-item__content">
+            <strong class="info-item__title">MELHOR PREÇO</strong>
+            <span class="info-item__sub">Garantido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="categories" id="categories" aria-label="Compre por categoria">
+
+      <!-- Linha 1: Decoração (580x400) e Brinquedos & Miniaturas (580x400) -->
+      <div class="categories__row">
+        <!-- 1. DECORAÇÃO (580x400) - Linha 1 Esquerda -->
+        <div class="category category--living" id="cat-decoracao">
+          <img src="category_decoracao.jpg?v=10" alt="Decoração - Vasos &amp; Decoração" class="category__img" loading="lazy" />
+          <div class="category__content">
+            <span class="category__label" style="color: #b47d48;">DECORAÇÃO</span>
+            <h2 class="category__title">Vasos &amp; Decoração</h2>
+          </div>
+        </div>
+
+        <!-- 2. BRINQUEDOS & MINIATURAS (580x400) - Linha 1 Direita -->
+        <div class="category category--decor" id="cat-brinquedos">
+          <img src="category_brinquedos.jpg?v=10" alt="Diversão - Brinquedos &amp; Miniaturas" class="category__img" loading="lazy" />
+          <div class="category__content">
+            <span class="category__label" style="color: #e91e63;">DIVERSÃO</span>
+            <h2 class="category__title">Brinquedos &amp; Miniaturas</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha 2: Organização & Acessórios (370x400) e Presentes & Personalizados (790x400) -->
+      <div class="categories__row">
+        <!-- 3. ORGANIZAÇÃO & ACESSÓRIOS (370x400) - Linha 2 Esquerda -->
+        <div class="category category--kitchen" id="cat-organizacao">
+          <img src="category_organizacao.jpg?v=10" alt="Utilidades - Organização &amp; Acessórios" class="category__img" loading="lazy" />
+          <div class="category__content">
+            <span class="category__label" style="color: #0091ea;">UTILIDADES</span>
+            <h2 class="category__title">Organização &amp; Acessórios</h2>
+          </div>
+        </div>
+
+        <!-- 4. PRESENTES & PERSONALIZADOS (790x400) - Linha 2 Direita -->
+        <div class="category category--bed" id="cat-personalizados">
+          <img src="category_personalizados.jpg?v=10" alt="Presentes &amp; Personalizados" class="category__img" loading="lazy" />
+          <div class="category__content">
+            <span class="category__label" style="color: #43a047;">PERSONALIZADOS</span>
+            <h2 class="category__title">Presentes &amp; Personalizados</h2>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== PRODUTOS ===== -->
+    <section class="products" id="products" aria-label="Novidades e produtos em destaque">
+
+      <div class="products__top">
+        <h2 class="products__heading">Novidade</h2>
+        <div class="products__filters" role="tablist">
+          <button class="filter-tab filter-tab--active" id="tab-all" data-filter="all">Todos os produtos</button>
+          <button class="filter-tab" id="tab-furniture" data-filter="furniture">Mobília</button>
+          <button class="filter-tab" id="tab-bed" data-filter="bed">Cama e Banho</button>
+          <button class="filter-tab" id="tab-lighting" data-filter="lighting">Iluminação</button>
+          <button class="filter-tab" id="tab-tableware" data-filter="tableware">Utensílios de mesa</button>
+          <button class="filter-tab" id="tab-bestselling" data-filter="bestselling">Mais Vendidos</button>
+        </div>
+      </div>
+
+      <div class="products__grid" id="products-grid">
+
+        <!-- Produto 1: Cadeira suspensa Aerona -->
+        <article class="product-card" id="prod-1" data-category="furniture">
+          <div class="product-card__img-wrap">
+            <a href="product.html" aria-label="Ver detalhes de Cadeira suspensa Aerona">
+              <img src="product_1_aerona.png" alt="Cadeira suspensa Aerona" class="product-card__img" loading="lazy" />
+            </a>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name"><a href="product.html" style="color: inherit; text-decoration: none;">Cadeira suspensa Aerona</a></p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span>
+            </div>
+            <p class="product-card__price">R$ 499,90</p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-1">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-1" aria-label="Lista de desejos">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-card__icon-btn" id="share-1" aria-label="Compartilhar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 2: Mesa deslizante Phoenix -->
+        <article class="product-card" id="prod-2" data-category="furniture">
+          <div class="product-card__img-wrap">
+            <img src="product_2_phoenix.png" alt="Mesa deslizante Phoenix" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name">Mesa deslizante Phoenix</p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span>
+            </div>
+            <p class="product-card__price">R$ 139,90</p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-2">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-2" aria-label="Lista de desejos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <button class="product-card__icon-btn" id="share-2" aria-label="Compartilhar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 3: Cadeira de jantar Silas (Oferta) -->
+        <article class="product-card" id="prod-3" data-category="furniture">
+          <div class="product-card__img-wrap">
+            <span class="sale-badge">Oferta</span>
+            <img src="product_3_silas.png" alt="Cadeira de jantar Silas" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name">Cadeira de jantar Silas</p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span><span class="star star--empty">&#9733;</span>
+            </div>
+            <p class="product-card__price"><span class="price-old">R$ 39,90</span> <span class="price-current">R$ 29,90</span></p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-3">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-3" aria-label="Lista de desejos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <button class="product-card__icon-btn" id="share-3" aria-label="Compartilhar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 4: Mesa de cabeceira Lucas -->
+        <article class="product-card" id="prod-4" data-category="bed">
+          <div class="product-card__img-wrap">
+            <img src="product_4_nightstand.png" alt="Mesa de cabeceira Lucas" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name">Mesa de cabeceira Lucas</p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span>
+            </div>
+            <p class="product-card__price">R$ 219,00</p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-4">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-4" aria-label="Lista de desejos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <button class="product-card__icon-btn" id="share-4" aria-label="Compartilhar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 5: Banco Mosaico Circular -->
+        <article class="product-card" id="prod-5" data-category="furniture">
+          <div class="product-card__img-wrap">
+            <img src="product_5_stool.png" alt="Banco Mosaico Circular" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name">Banco Mosaico Circular</p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span>
+            </div>
+            <p class="product-card__price">R$ 189,00</p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-5">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-5" aria-label="Lista de desejos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <button class="product-card__icon-btn" id="share-5" aria-label="Compartilhar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 6: Cesto Organizador Tecido -->
+        <article class="product-card" id="prod-6" data-category="bed">
+          <div class="product-card__img-wrap">
+            <img src="product_6_basket.png" alt="Cesto Organizador Tecido" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__name">Cesto Organizador Tecido</p>
+            <div class="product-card__stars">
+              <span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--filled">&#9733;</span><span class="star star--empty">&#9733;</span>
+            </div>
+            <p class="product-card__price">R$ 119,00</p>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__add" id="add-6">ADICIONAR AO CARRINHO</button>
+            <div class="product-card__action-icons">
+              <button class="product-card__icon-btn" id="wish-6" aria-label="Lista de desejos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <button class="product-card__icon-btn" id="share-6" aria-label="Compartilhar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ (FOOTER CINZA ESCURO) ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <!-- Coluna 1: Sobre a Marca -->
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html">CorMista 3D</a>
+          </div>
+          <p class="footer__brand-desc">Mobiliário e artigos de decoração de alto padrão. Design atemporal, conforto e exclusividade para transformar cada ambiente da sua casa.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><path d="M18 10a6 6 0 0 0-12 0c0 4 3 7 6 7 2 0 3-1 3-1"/><circle cx="12" cy="10" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Ajuda & Suporte -->
+        <div class="footer__col">
+          <h4 class="footer__title">Ajuda &amp; Informações</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Rastrear Pedido</a></li>
+            <li><a href="#" class="footer__link">Trocas e Devoluções</a></li>
+            <li><a href="#" class="footer__link">Política de Entrega</a></li>
+            <li><a href="#" class="footer__link">Termos de Serviço</a></li>
+            <li><a href="#" class="footer__link">Perguntas Frequentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Departamentos -->
+        <div class="footer__col">
+          <h4 class="footer__title">Departamentos</h4>
+          <ul class="footer__links">
+            <li><a href="#cat-decoracao" class="footer__link">Decoração</a></li>
+            <li><a href="#cat-brinquedos" class="footer__link">Brinquedos &amp; Miniaturas</a></li>
+            <li><a href="#cat-organizacao" class="footer__link">Organização &amp; Acessórios</a></li>
+            <li><a href="#cat-personalizados" class="footer__link">Personalizados</a></li>
+            <li><a href="#products" class="footer__link">Novidades da Semana</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Newsletter -->
+        <div class="footer__col">
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__text">Cadastre-se para novidades exclusivas e <strong>10% OFF</strong> no seu primeiro pedido.</p>
+          <form class="footer__form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado por se inscrever na Cor Mista 3D!');">
+            <div class="footer__input-wrap">
+              <input type="email" class="footer__input" placeholder="Seu melhor e-mail..." required />
+              <button type="submit" class="footer__submit-btn" aria-label="Inscrever-se">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </form>
+          <span class="footer__secure-note">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Compra 100% segura e protegida
+          </span>
+        </div>
+      </div>
+
+      <!-- Barra Inferior -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Cor Mista 3D Todos os direitos reservados. Feito com excelência.</p>
+        <div class="footer__payments">
+          <span class="payment-badge">PIX</span>
+          <span class="payment-badge">VISA</span>
+          <span class="payment-badge">MASTERCARD</span>
+          <span class="payment-badge">BOLETO</span>
+          <span class="payment-badge">ELO</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Voltar ao Topo -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="app.js?v=12"></script>
+</body>
+</html>
