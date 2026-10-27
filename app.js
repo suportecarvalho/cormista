@@ -4,6 +4,11 @@
 
 // --- Cart State & Management ---
 let cart = [];
+try {
+  const savedCart = localStorage.getItem('cormista_cart');
+  if (savedCart) cart = JSON.parse(savedCart);
+} catch (e) {}
+
 const cartBadge = document.getElementById('cart-badge');
 const cartDrawer = document.getElementById('cart-drawer');
 const cartDrawerOverlay = document.getElementById('cart-drawer-overlay');
@@ -19,15 +24,21 @@ function formatCurrencyBRL(val) {
 }
 
 function updateCartUI() {
+  try {
+    localStorage.setItem('cormista_cart', JSON.stringify(cart));
+  } catch (e) {}
+
   const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-  cartBadge.textContent = totalCount;
+  if (cartBadge) cartBadge.textContent = totalCount;
   if (cartDrawerCount) cartDrawerCount.textContent = totalCount;
   if (cartDrawerSubtotal) cartDrawerSubtotal.textContent = formatCurrencyBRL(totalPrice);
 
-  cartBadge.style.transform = 'scale(1.35)';
-  setTimeout(() => { cartBadge.style.transform = 'scale(1)'; }, 200);
+  if (cartBadge) {
+    cartBadge.style.transform = 'scale(1.35)';
+    setTimeout(() => { cartBadge.style.transform = 'scale(1)'; }, 200);
+  }
 
   if (!cartDrawerItems || !cartDrawerEmpty) return;
 
@@ -86,6 +97,7 @@ window.closeCartDrawer = closeCartDrawer;
 btnCart?.addEventListener('click', openCartDrawer);
 btnCloseCart?.addEventListener('click', closeCartDrawer);
 cartDrawerOverlay?.addEventListener('click', closeCartDrawer);
+updateCartUI();
 
 // Add to cart buttons on product cards
 document.querySelectorAll('.product-card').forEach(card => {

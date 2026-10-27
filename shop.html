@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja — Cor Mista 3D</title>
+  <meta name="description" content="Catálogo completo Cor Mista 3D — Descubra coleções exclusivas de móveis, decoração, utilidades e presentes em impressão 3D com acabamento premium." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=15" />
+</head>
+<body class="shop-page">
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header" id="header">
+    <div class="header__logo">
+      <a href="index.html" aria-label="CorMista 3D Início">
+        <img src="logo_cormista3d.png?v=8" alt="CorMista 3D" class="header__logo-img" />
+      </a>
+    </div>
+
+    <!-- Menu Desktop -->
+    <nav class="header__nav" aria-label="Navegação principal">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">Início</a>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="shop.html" class="nav-link nav-link--active">Loja</a>
+        <ul class="dropdown-menu">
+          <li><a href="shop.html" class="dropdown-link">Todos os Produtos</a></li>
+          <li><a href="shop.html?category=furniture" class="dropdown-link">Móveis</a></li>
+          <li><a href="shop.html?category=decor" class="dropdown-link">Decoração</a></li>
+          <li><a href="shop.html?category=tableware" class="dropdown-link">Organização &amp; Acessórios</a></li>
+          <li><a href="shop.html?category=lighting" class="dropdown-link">Utilidades</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="index.html#categories" class="nav-link">Páginas</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#categories" class="dropdown-link">Categorias</a></li>
+          <li><a href="index.html#info-bar" class="dropdown-link">Envios &amp; Devoluções</a></li>
+          <li><a href="product.html" class="dropdown-link">Página de Produto</a></li>
+        </ul>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="index.html#products" class="nav-link">Blog</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-link">Tendências de Design 2026</a></li>
+          <li><a href="#" class="dropdown-link">Estilo de Vida Minimalista</a></li>
+          <li><a href="#" class="dropdown-link">Impressão 3D na Decoração</a></li>
+        </ul>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#info-bar" class="nav-link">Contato</a>
+      </div>
+    </nav>
+
+    <!-- Ícones do Cabeçalho -->
+    <div class="header__icons">
+      <!-- Busca -->
+      <button class="icon-btn" id="btn-search" aria-label="Abrir pesquisa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+
+      <!-- Carrinho -->
+      <button class="icon-btn icon-btn--cart" id="btn-cart" aria-label="Abrir carrinho">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+
+      <!-- Hambúrguer Mobile -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile (Drawer) -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav__header">
+      <span class="mobile-nav__title">Menu</span>
+      <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Fechar menu">&times;</button>
+    </div>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav-link">Início</a></li>
+      <li><a href="shop.html" class="mobile-nav-link mobile-nav-link--active">Loja</a></li>
+      <li><a href="index.html#categories" class="mobile-nav-link">Categorias</a></li>
+      <li><a href="product.html" class="mobile-nav-link">Produto Detalhado</a></li>
+      <li><a href="index.html#info-bar" class="mobile-nav-link">Contato &amp; Envios</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+  <!-- Modal de Pesquisa -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal__inner">
+      <button class="search-modal__close" id="search-close" aria-label="Fechar pesquisa">&times;</button>
+      <div class="search-modal__input-wrap">
+        <input type="text" id="search-input" placeholder="Buscar produtos na loja..." autocomplete="off" />
+        <button class="search-modal__btn" aria-label="Confirmar busca">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrinho Drawer (Lateral) -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras">
+    <div class="cart-drawer__header">
+      <h3>Seu Carrinho (<span id="cart-drawer-count">0</span>)</h3>
+      <button class="cart-drawer__close" id="btn-close-cart" aria-label="Fechar carrinho">&times;</button>
+    </div>
+    <div class="cart-drawer__items" id="cart-drawer-items">
+      <!-- Itens dinâmicos -->
+    </div>
+    <div class="cart-drawer__empty" id="cart-drawer-empty">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      <p>Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal:</span>
+        <strong id="cart-drawer-subtotal">R$ 0,00</strong>
+      </div>
+      <button class="btn btn--primary btn--full" id="btn-checkout">FINALIZAR COMPRA</button>
+    </div>
+  </div>
+
+  <!-- ===== CONTEÚDO PRINCIPAL DA LOJA (SUPRO 2 LAYOUT) ===== -->
+  <main class="shop-main-container">
+    
+    <!-- Cabeçalho do Catálogo: Título, Breadcrumbs & Toolbar -->
+    <section class="page-header-catalog" id="page-header-catalog">
+      <div class="page-header-wrapper">
+        <div class="page-header-title">
+          <h1>Loja</h1>
+          <nav class="breadcrumbs" aria-label="Navegação em trilha">
+            <a href="index.html">Início</a>
+            <span class="circle"></span>
+            <span class="current">Loja</span>
+          </nav>
+        </div>
+
+        <div class="page-header-shop-toolbar">
+          <div class="shop-toolbar" id="supro-shop-toolbar">
+            
+            <!-- Contagem de Produtos -->
+            <div class="shop-toolbar-el product-found">
+              <span id="product-count">27</span> Produtos Encontrados
+            </div>
+
+            <!-- Dropdown de Ordenação (Supro woocommerce-ordering) -->
+            <div class="shop-toolbar-el supro-sort-dropdown" id="sort-dropdown">
+              <button class="sort-dropdown-btn" id="sort-btn" aria-haspopup="true" aria-expanded="false">
+                <span>Ordenar por: <strong class="sort-by-text">Mais recentes</strong></span>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <ul class="sort-dropdown-menu" id="sort-menu" role="menu">
+                <li><a href="#" data-sort="default" role="menuitem">Padrão</a></li>
+                <li><a href="#" data-sort="popularity" role="menuitem">Popularidade</a></li>
+                <li><a href="#" data-sort="rating" role="menuitem">Avaliação média</a></li>
+                <li><a href="#" data-sort="date" class="active" role="menuitem">Mais recentes</a></li>
+                <li><a href="#" data-sort="price-asc" role="menuitem">Preço: menor para maior</a></li>
+                <li><a href="#" data-sort="price-desc" role="menuitem">Preço: maior para menor</a></li>
+              </ul>
+            </div>
+
+            <!-- Alternador de Visualização (Grade vs Lista) -->
+            <div class="shop-toolbar-el shop-view" id="supro-shop-view">
+              <button class="view-btn view-grid current" data-view="grid" aria-label="Visualização em Grade (4 colunas)" title="Visualização em Grade">
+                <svg width="17" height="17" viewBox="0 0 18 18" fill="currentColor">
+                  <rect x="0" y="0" width="7.5" height="7.5" rx="1"/>
+                  <rect x="10.5" y="0" width="7.5" height="7.5" rx="1"/>
+                  <rect x="0" y="10.5" width="7.5" height="7.5" rx="1"/>
+                  <rect x="10.5" y="10.5" width="7.5" height="7.5" rx="1"/>
+                </svg>
+              </button>
+              <button class="view-btn view-list" data-view="list" aria-label="Visualização em Lista" title="Visualização em Lista">
+                <svg width="17" height="17" viewBox="0 0 18 18" fill="currentColor">
+                  <rect x="0" y="1.5" width="4.5" height="4" rx="1"/>
+                  <rect x="7" y="2.5" width="11" height="2" rx="1"/>
+                  <rect x="0" y="7" width="4.5" height="4" rx="1"/>
+                  <rect x="7" y="8" width="11" height="2" rx="1"/>
+                  <rect x="0" y="12.5" width="4.5" height="4" rx="1"/>
+                  <rect x="7" y="13.5" width="11" height="2" rx="1"/>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pílulas de Filtro por Categoria -->
+    <nav class="shop-category-tabs" aria-label="Filtro rápido por categorias">
+      <button class="shop-cat-btn active" data-category="all">Todos os Produtos</button>
+      <button class="shop-cat-btn" data-category="furniture">Móveis</button>
+      <button class="shop-cat-btn" data-category="decor">Decoração</button>
+      <button class="shop-cat-btn" data-category="tableware">Organização &amp; Acessórios</button>
+      <button class="shop-cat-btn" data-category="lighting">Utilidades</button>
+    </nav>
+
+    <!-- Grade de Produtos (columns-4) -->
+    <div class="supro-products-container">
+      <ul class="products-grid" id="products-grid">
+        <!-- Renderizado dinamicamente via shop.js -->
+      </ul>
+    </div>
+
+    <!-- Paginação & Botão Discover More (Supro Infinite Loading) -->
+    <div class="supro-pagination">
+      <button class="btn-discover-more" id="btn-discover-more">
+        <span class="btn-text">DISCOVER MORE</span>
+        <span class="spinner-icon"></span>
+      </button>
+
+      <ul class="page-numbers-list" aria-label="Paginação">
+        <li><button class="page-num active" id="page-1-btn">1</button></li>
+        <li><button class="page-num" id="page-2-btn">2</button></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div class="quick-view-modal" id="quick-view-modal" aria-hidden="true" role="dialog">
+    <div class="quick-view-overlay" id="quick-view-overlay"></div>
+    <div class="quick-view-dialog">
+      <button class="quick-view-close" id="quick-view-close" aria-label="Fechar visualização rápida">&times;</button>
+      <div class="quick-view-media">
+        <img id="qv-img" src="" alt="Produto" />
+      </div>
+      <div class="quick-view-content">
+        <h2 class="quick-view-title" id="qv-title">Produto</h2>
+        <div id="qv-rating"></div>
+        <div class="quick-view-price" id="qv-price"></div>
+        <p class="quick-view-desc" id="qv-desc"></p>
+
+        <div class="quick-view-actions">
+          <div class="quick-view-qty">
+            <button type="button" id="qv-qty-minus">&minus;</button>
+            <input type="number" id="qv-qty" value="1" min="1" max="99" readonly />
+            <button type="button" id="qv-qty-plus">&plus;</button>
+          </div>
+          <button class="quick-view-add-btn" id="qv-add-btn">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificações -->
+  <div class="toast-notify" id="shop-toast"></div>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--brand">
+          <div class="footer__brand-logo">
+            <a href="index.html">CorMista 3D</a>
+          </div>
+          <p class="footer__desc">
+            Estúdio brasileiro de design e fabricação aditiva. Criamos peças singulares em impressão 3D com precisão milimétrica e acabamento artesanal refinado.
+          </p>
+          <div class="footer__contact-info">
+            <p><strong>Atendimento:</strong> Seg. a Sex. das 9h às 18h</p>
+            <p><strong>E-mail:</strong> contato@cormista3d.com.br</p>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Ajuda &amp; Informações</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#info-bar">Rastrear Pedido</a></li>
+            <li><a href="index.html#info-bar">Envios &amp; Devoluções</a></li>
+            <li><a href="index.html#info-bar">Garantia &amp; Cuidados</a></li>
+            <li><a href="index.html#info-bar">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Sobre CorMista 3D</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#hero">Nossa História</a></li>
+            <li><a href="index.html#categories">Categorias &amp; Coleções</a></li>
+            <li><a href="shop.html">Loja Completa</a></li>
+            <li><a href="index.html#info-bar">Sustentabilidade &amp; Biopolímeros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Loja Online</h4>
+          <ul class="footer__links">
+            <li><a href="shop.html?category=furniture">Móveis &amp; Decoração</a></li>
+            <li><a href="shop.html?category=decor">Vasos &amp; Esculturas</a></li>
+            <li><a href="shop.html?category=tableware">Organização &amp; Acessórios</a></li>
+            <li><a href="shop.html?category=lighting">Utilidades Modernas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 CorMista 3D. Todos os direitos reservados. Feito com excelência.</p>
+        <div class="footer__payments">
+          <span class="payment-badge">PIX</span>
+          <span class="payment-badge">VISA</span>
+          <span class="payment-badge">MASTERCARD</span>
+          <span class="payment-badge">BOLETO</span>
+          <span class="payment-badge">ELO</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Voltar ao Topo -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="app.js?v=14"></script>
+  <script src="shop.js?v=14"></script>
+</body>
+</html>
