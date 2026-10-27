@@ -6,7 +6,7 @@
 const PRODUCTS_DATA = [
   {
     id: 1,
-    title: "Aerona Hanging Chair",
+    title: "Cadeira suspensa Aerona",
     category: "furniture",
     category_name: "Móveis",
     price: 499.90,
@@ -19,8 +19,50 @@ const PRODUCTS_DATA = [
     product_link: "product.html"
   },
   {
+    id: 20,
+    title: "Planta de lótus artificial",
+    category: "decor",
+    category_name: "Decoração",
+    price: 49.90,
+    old_price: 69.90,
+    rating: 0,
+    badge: "Oferta",
+    badge_type: "sale",
+    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/5a-400x400.jpg",
+    desc: "Planta lótus decorativa permanente com acabamento ultra realista e vaso cerâmico incluso.",
+    product_link: "product.html"
+  },
+  {
+    id: 5,
+    title: "Banco Berezi",
+    category: "furniture",
+    category_name: "Móveis",
+    price: 69.90,
+    old_price: null,
+    rating: 5.0,
+    badge: "",
+    badge_type: "",
+    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2018/06/5a-1-400x400.jpg",
+    desc: "Banqueta com tripé em formato geométrico esculpido e assento confortável, perfeita para bancadas e áreas gourmet.",
+    product_link: "product.html"
+  },
+  {
+    id: 16,
+    title: "Conjunto de panelas de bronze",
+    category: "decor",
+    category_name: "Decoração",
+    price: 55.00,
+    old_price: 65.00,
+    rating: 0,
+    badge: "Oferta",
+    badge_type: "sale",
+    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/3a_1-400x400.jpg",
+    desc: "Conjunto com três potes em metal com banho bronze acetinado e tampa hermética para uso na cozinha ou toucador.",
+    product_link: "product.html"
+  },
+  {
     id: 2,
-    title: "Phoenix Slide Table",
+    title: "Mesa lateral Phoenix",
     category: "furniture",
     category_name: "Móveis",
     price: 139.90,
@@ -34,13 +76,13 @@ const PRODUCTS_DATA = [
   },
   {
     id: 3,
-    title: "Silas Dining Chair",
+    title: "Cadeira de jantar Silas",
     category: "furniture",
     category_name: "Móveis",
     price: 29.90,
     old_price: 39.90,
     rating: 4.5,
-    badge: "Sale",
+    badge: "Oferta",
     badge_type: "sale",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2018/06/3a-2-400x400.jpg",
     desc: "Cadeira de jantar com linhas limpas e encosto ergonômico, ideal para ambientes sofisticados e contemporâneos.",
@@ -48,7 +90,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 4,
-    title: "Lucas Beside Table",
+    title: "Mesa de cabeceira Lucas",
     category: "furniture",
     category_name: "Móveis",
     price: 49.90,
@@ -61,22 +103,8 @@ const PRODUCTS_DATA = [
     product_link: "product.html"
   },
   {
-    id: 5,
-    title: "Berezi Stool",
-    category: "furniture",
-    category_name: "Móveis",
-    price: 69.90,
-    old_price: null,
-    rating: 5.0,
-    badge: "",
-    badge_type: "",
-    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2018/06/5a-1-400x400.jpg",
-    desc: "Banqueta com tripé em formato geométrico esculpido e assento confortável, perfeita para bancadas e áreas gourmet.",
-    product_link: "product.html"
-  },
-  {
     id: 6,
-    title: "Indifera Storage Basket",
+    title: "Cesto organizador Indifera",
     category: "tableware",
     category_name: "Organização & Acessórios",
     price: 59.90,
@@ -90,7 +118,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 7,
-    title: "Korea Fabric Chair",
+    title: "Cadeira de tecido Korea",
     category: "furniture",
     category_name: "Móveis",
     price: 269.90,
@@ -104,13 +132,13 @@ const PRODUCTS_DATA = [
   },
   {
     id: 8,
-    title: "Claure Austin Lover Round Chair",
+    title: "Poltrona redonda Claure Austin",
     category: "furniture",
     category_name: "Móveis",
     price: 59.90,
     old_price: null,
     rating: 5.0,
-    badge: "Hot",
+    badge: "Destaque",
     badge_type: "hot",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/8a-400x400.jpg",
     desc: "Poltrona circular envolvente com base giratória silenciosa e acabamento aveludado para cantos de leitura relaxantes.",
@@ -118,13 +146,13 @@ const PRODUCTS_DATA = [
   },
   {
     id: 9,
-    title: "Simple Board Combine Book Shelf",
+    title: "Estante combinada Simple Board",
     category: "furniture",
     category_name: "Móveis",
     price: 149.90,
     old_price: 179.90,
     rating: 5.0,
-    badge: "Sale",
+    badge: "Oferta",
     badge_type: "sale",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/9a-400x400.jpg",
     desc: "Estante modular suspensa de encaixe rápido personalizável, ideal para exibir coleções, livros e peças decorativas.",
@@ -132,7 +160,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 10,
-    title: "Linear Stem Cushion",
+    title: "Almofada Linear Stem",
     category: "decor",
     category_name: "Decoração",
     price: 29.90,
@@ -146,7 +174,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 11,
-    title: "Eve Asymmetric Planter",
+    title: "Vaso assimétrico Eve",
     category: "decor",
     category_name: "Decoração",
     price: 59.90,
@@ -160,7 +188,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 12,
-    title: "Flip Clock",
+    title: "Relógio Flip Retrô",
     category: "decor",
     category_name: "Decoração",
     price: 29.90,
@@ -174,7 +202,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 13,
-    title: "Spot Flower Plant Pot",
+    title: "Cachepot pontilhado Spot",
     category: "decor",
     category_name: "Decoração",
     price: 39.90,
@@ -188,7 +216,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 14,
-    title: "Painted Beech Songbird",
+    title: "Pássaro em faia pintada",
     category: "decor",
     category_name: "Decoração",
     price: 49.90,
@@ -202,36 +230,21 @@ const PRODUCTS_DATA = [
   },
   {
     id: 15,
-    title: "Dancing Bear Cushion",
+    title: "Almofada Dancing Bear",
     category: "decor",
     category_name: "Decoração",
     price: 29.90,
     old_price: null,
     rating: 5.0,
-    badge: "Hot",
+    badge: "Destaque",
     badge_type: "hot",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/2a_1-400x400.jpg",
     desc: "Almofada lúdica com bordado de urso em linho puro, ideal para quartos infantis e salas criativas.",
     product_link: "product.html"
   },
   {
-    id: 16,
-    title: "Bronze Pot Set",
-    category: "decor",
-    category_name: "Decoração",
-    price: 55.00,
-    old_price: 65.00,
-    rating: 5.0,
-    badge: "Sale",
-    badge_type: "sale",
-    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/3a_1-400x400.jpg",
-    desc: "Conjunto com três potes em metal com banho bronze acetinado e tampa hermética para uso na cozinha ou toucador.",
-    product_link: "product.html"
-  },
-  // --- Page 2 Products (Loaded via "DISCOVER MORE" or Page 2) ---
-  {
     id: 17,
-    title: "O-Tidy Desk Organiser",
+    title: "Organizador de mesa O-Tidy",
     category: "tableware",
     category_name: "Organização & Acessórios",
     price: 39.90,
@@ -245,7 +258,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 18,
-    title: "Wooden Mortar Pestle",
+    title: "Pilão de madeira tradicional",
     category: "tableware",
     category_name: "Organização & Acessórios",
     price: 45.00,
@@ -259,7 +272,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 19,
-    title: "Stoneware Vase",
+    title: "Vaso rústico Stoneware",
     category: "decor",
     category_name: "Decoração",
     price: 62.00,
@@ -272,22 +285,8 @@ const PRODUCTS_DATA = [
     product_link: "product.html"
   },
   {
-    id: 20,
-    title: "Artificial Lotus Plant",
-    category: "decor",
-    category_name: "Decoração",
-    price: 34.90,
-    old_price: null,
-    rating: 4.0,
-    badge: "",
-    badge_type: "",
-    image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/5a-400x400.jpg",
-    desc: "Planta lótus decorativa permanente com acabamento ultra realista e vaso cerâmico incluso.",
-    product_link: "product.html"
-  },
-  {
     id: 21,
-    title: "Woodrow Waste Bin",
+    title: "Lixeira em madeira Woodrow",
     category: "tableware",
     category_name: "Organização & Acessórios",
     price: 49.90,
@@ -301,13 +300,13 @@ const PRODUCTS_DATA = [
   },
   {
     id: 22,
-    title: "Rabbit Chair",
+    title: "Cadeira Rabbit Coelho",
     category: "furniture",
     category_name: "Móveis",
     price: 189.90,
     old_price: null,
     rating: 5.0,
-    badge: "Hot",
+    badge: "Destaque",
     badge_type: "hot",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/7a-400x400.jpg",
     desc: "Cadeira escultural no formato de orelhas de coelho, assinada por designers contemporâneos para ambientes exclusivos.",
@@ -315,7 +314,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 23,
-    title: "Torq Nutcracker",
+    title: "Quebra-nozes de precisão Torq",
     category: "lighting",
     category_name: "Utilidades",
     price: 29.90,
@@ -329,7 +328,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 24,
-    title: "Ico Bottle Opener",
+    title: "Abridor de garrafas Ico",
     category: "lighting",
     category_name: "Utilidades",
     price: 19.90,
@@ -343,7 +342,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 25,
-    title: "Ocaso Candle Snuffer",
+    title: "Abafador de velas Ocaso",
     category: "lighting",
     category_name: "Utilidades",
     price: 24.90,
@@ -357,13 +356,13 @@ const PRODUCTS_DATA = [
   },
   {
     id: 26,
-    title: "Flora Vase",
+    title: "Vaso âmbar Flora",
     category: "decor",
     category_name: "Decoração",
     price: 79.90,
     old_price: 95.00,
     rating: 5.0,
-    badge: "Sale",
+    badge: "Oferta",
     badge_type: "sale",
     image: "https://drfurithemes.com/supro2/wp-content/uploads/sites/13/2017/12/2a-2-400x400.jpg",
     desc: "Vaso de vidro soprado artesanal com gradiente âmbar, refletindo a luz natural com beleza singular.",
@@ -371,7 +370,7 @@ const PRODUCTS_DATA = [
   },
   {
     id: 27,
-    title: "Pill Mortar & Pestle",
+    title: "Pilão em cerâmica Pill",
     category: "tableware",
     category_name: "Organização & Acessórios",
     price: 38.00,
@@ -387,7 +386,7 @@ const PRODUCTS_DATA = [
 
 // --- State Management ---
 let currentCategory = 'all';
-let currentSort = 'date';
+let currentSort = 'default';
 let currentView = 'grid'; // 'grid' | 'list'
 let currentPage = 1;
 const ITEMS_PER_PAGE = 16;
@@ -402,17 +401,18 @@ try {
 
 // --- Currency Formatter ---
 function formatPriceBRL(val) {
-  return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  return '$ ' + val.toFixed(2).replace('.', ',');
 }
 
 // --- Star Rating Generator ---
 function renderStarRating(rating) {
+  if (!rating || rating <= 0) return '';
   let stars = '';
   const fullStars = Math.floor(rating);
   for (let i = 0; i < 5; i++) {
     const isFilled = i < fullStars;
     stars += `
-      <svg viewBox="0 0 24 24" fill="${isFilled ? '#f5a623' : '#e0e0e0'}">
+      <svg viewBox="0 0 24 24" fill="${isFilled ? '#f68872' : '#e0e0e0'}">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
       </svg>
     `;
@@ -458,12 +458,14 @@ function getProcessedProducts() {
       list.sort((a, b) => b.rating - a.rating);
       break;
     case 'popularity':
-      list.sort((a, b) => (b.badge === 'Hot' ? 1 : 0) - (a.badge === 'Hot' ? 1 : 0));
+      list.sort((a, b) => (b.badge === 'Oferta' || b.badge === 'Destaque' ? 1 : 0) - (a.badge === 'Oferta' || a.badge === 'Destaque' ? 1 : 0));
       break;
     case 'date':
+      list.sort((a, b) => b.id - a.id);
+      break;
     case 'default':
     default:
-      list.sort((a, b) => b.id - a.id);
+      // Mantém a ordem padrão do catálogo como no array
       break;
   }
 
@@ -552,7 +554,6 @@ function renderProducts() {
         </div>
 
         <div class="un-product-details">
-          <div class="product-category-tag">${p.category_name}</div>
           <h3 class="product-card-title">
             <a href="${p.product_link}">${p.title}</a>
           </h3>
@@ -588,7 +589,7 @@ function renderProducts() {
     } else {
       discoverBtn.style.display = 'inline-flex';
       discoverBtn.innerHTML = `
-        <span class="btn-text">DISCOVER MORE</span>
+        <span class="btn-text">CARREGAR MAIS</span>
         <span class="spinner-icon"></span>
       `;
     }
